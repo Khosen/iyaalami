@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <%- include('./partials/dashboardhead') %>
+        <link href="/css/form.css" rel="stylesheet">
+      <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      --><link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body class="text-center container">
+    <%- include('./partials/dashboardnav') %>
+
+        <!--  <div class="col-md-8 col-lg-12 text-center">-->
+
+        <div class="form-row col-md-8 col-lg-12 text-center">
+
+            <form class="form-fill" action="/admin/details" method="post" enctype="multipart/form-data">
+                <h5 style="font-weight: bold; margin-top: 5rem;">Iya-Alami Estate </h5>
+                <span style="font-size: x-small;">please select properties sold to move to move to the database</span>
+                <br>
+                <br>
+               
+                <div class="form-row">
+                <div class="col-12 col-sm-6 col-xl-8 offset-2" style="margin-top:20rem!important;">
+             
+                    <div class="listings-content" style="margin-top:-20rem!important;">
+                        <div class="form-check-inline">  
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form-check-input">
+                            <label for="vehicle1" class="form-check-label" style="margin-right: 0.8rem;;"> </label><br>
+    
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form-check-input">
+                            <label for="vehicle1" class="form-check-label" style="margin-right: 0.8rem;;"> </label><br>
+                           </div>
+                        
+                    </div> 
+                       
+                </div>
+
+                </div>
+                <div>
+                <button class="btn btn-primary blue" style="margin-top:-20rem!important;"type="submit" style="color:white;">Submit form</button>
+                </div>
+
+   
+            </form>
+
+        </div>
+
+        <%- include('./partials/dashboardscript') %>
+        <script src="/css/js/jquery-2.2.4.min.js"></script>
+        <script src="/css/js/bootstrap.min.js"></script>
+      
+</body>
+
+</html>

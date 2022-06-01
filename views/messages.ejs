@@ -1,0 +1,44 @@
+<% if (locals.errors) { %>
+    <ul>
+        <% Object.values(errors).forEach(function(error){ %>
+            <li>
+                <%= error.msg %>
+            </li>
+            <% }); %>
+    </ul>
+    <% } %>
+
+        <span> <% if (locals.errors) { %>
+        <ul>
+            <% Object.values(errors).forEach(function(error){ %>
+                <li class="alert alert-danger" style="list-style:square; font-weight: bold;">
+                    <%= error.msg %>
+                </li>
+                <% }); %>
+        </ul>
+        <% } %>
+    </span>
+
+        <span> <% if (locals.success_msg) { %>
+        <ul>
+            <% Object.values(success_msg).forEach(function(success_msg){ %>
+                <li class="alert alert-success" style="list-style:square; font-weight: bold;">
+                    <%= success_msg.msg %>
+                </li>
+                <% }); %>
+        </ul>
+        <% } %>
+    </span>
+
+
+
+        <span> <% if (locals.message.length> 0) { %>
+        <ul>
+          
+                <li class="alert alert-success" style="list-style:square; font-weight: bold;">
+                    <%= message%>
+                </li>
+           
+        </ul>
+        <% } %>
+    </span>

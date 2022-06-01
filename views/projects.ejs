@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head') %>
+    
+<link rel="stylesheet" href="/css/vendor/themify-icons.css">
+<link rel="stylesheet" href="/css/vendor/icon-font.min.css">
+<link rel="stylesheet" href="/css/vendor/all.css">
+<link rel="stylesheet" href="/css/vendor/owl.theme.default.min.css">
+<link rel="stylesheet" href="/css/vendor/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="/css/vendor/style.css">
+</head>
+<body>
+
+<div id="preloader">
+<div class="south-load"></div>
+</div>
+
+<header class="header-area">
+    <%- include('./partials/header') %>
+</header>
+
+
+<section class="breadcumb-area bg-img" style="background-image: url(/images/project.jpg);">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12">
+<div class="breadcumb-content">
+<h3 class="breadcumb-title">Projects</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+        
+<section class="south-blog-area section-padding-100">
+<div class="container">
+<div class="row">
+    
+<div class="col-12 col-lg-12">
+<div class="single-blog-area mb-50">
+             
+                              
+ 
+    <div class="section-intro">
+        <h4 class="section-intro__title">OUR PORTFOLIO</h4>
+        <h2 class="section-intro__subtitle bottom-border">Ongoing Projects</h2>
+        </div>
+      
+    
+         <div class="row align-items-end pb-md-5 mb-4">
+        <div class="col-md-7 mb-4 mb-md-0">
+        <div class="portfolio__img img">
+        <img src="/<%= docs[0].image%>" class="d-block w-100 height-300 img-fluid img-height" alt="/images/logoed1.png">
+        </div>
+        </div>
+        <div class="col-md-5 mb-5 pl-xl-5">
+        <h4 class="section-intro__title left-border"><%= docs[0].date %></h4>
+        <h2 class="section-intro__subtitle small"><%= docs[0].projectName %> </h2>
+        <p  style="color:white!important; font-weight: bold;"><%= docs[0].status %> &nbsp; project &nbsp; <%= docs[0].district %> ,
+            <%= docs[0].city %>, &nbsp; <%= docs[0].state %></p>
+            <a class="btn btn--rightBorder mt-3" href="/projectListing/<%= docs[0].district %>">View &nbsp; more &nbsp; <%= docs[0].district %> &nbsp;projects</a>
+       
+      <!-- <p>If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      <a class="btn btn--rightBorder mt-3" href="#/">Read More</a>-->
+        </div>
+        </div>
+      
+        <div class="row align-items-end pb-md-5 mb-4">
+            <div class="col-md-5 mb-5 pr-xl-5 order-2 order-md-1">
+            <h4 class="section-intro__title left-border"><%= docs[0].date %></h4>
+            <h2 class="section-intro__subtitle small"><%= docs[2].projectName %> </h2>
+            <p  style="color:white!important; font-weight: bold;"><%= docs[2].status %> &nbsp; project &nbsp; <%= docs[2].district %> ,
+                <%= docs[2].city %>, &nbsp; <%= docs[2].state %></p>
+                <a class="btn btn--rightBorder mt-3" href="/projectListing/<%= docs[2].district %>">View &nbsp; more &nbsp; <%= docs[2].district %> &nbsp;projects</a>
+            </div>
+            <div class="col-md-7 order-1 order-md-2 mb-4 mb-md-0">
+            <div class="portfolio__img">
+                <img src="/<%= docs[2].image%>" class="d-block w-100 height-300 img-fluid img-height" alt="/images/logoed1.png">
+            </div>
+            </div>
+            </div>
+        <div class="row align-items-end pb-md-5 mb-4">
+        <div class="col-md-7 mb-4 mb-md-0">
+        <div class="portfolio__img">
+            <img src="/<%= docs[1].image%>" class="d-block w-100 height-300 img-fluid img-height" alt="/images/logoed1.png">
+        </div>
+        </div>
+        <div class="col-md-5 mb-5 pl-xl-5">
+        <h4 class="section-intro__title left-border"><%= docs[0].date %></h4>
+        <h2 class="section-intro__subtitle small"><%= docs[1].projectName %> </h2>
+        <p  style="color:white!important; font-weight: bold;"><%= docs[1].status %> &nbsp; project &nbsp; <%= docs[1].district %> ,
+            <%= docs[1].city %>, &nbsp; <%= docs[1].state %></p>
+   <!-- <p>If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+   -->   <a class="btn btn--rightBorder mt-3" href="/projectListing/<%= docs[3].district %>">View &nbsp; more &nbsp; <%= docs[1].district %> &nbsp;projects</a>
+       
+        </div>
+        </div>
+        <div class="row align-items-end pb-md-5 mb-4">
+        <div class="col-md-5 mb-5 pr-xl-5 order-2 order-md-1">
+        <h4 class="section-intro__title left-border"><%= docs[0].date %></h4>
+        <h2 class="section-intro__subtitle small"><%= docs[3].projectName %> </h2>
+        <p  style="color:white!important; font-weight: bold;"><%= docs[3].status %> &nbsp; project &nbsp; <%= docs[3].district %> ,
+            <%= docs[3].city %>, &nbsp; <%= docs[3].state %></p>
+            <a class="btn btn--rightBorder mt-3" href="#/">View &nbsp; more &nbsp; <%= docs[3].district %> &nbsp;projects</a>
+        </div>
+        <div class="col-md-7 order-1 order-md-2 mb-4 mb-md-0">
+        <div class="portfolio__img">
+            <img src="/<%= docs[3].image%>" class="d-block w-100 height-300 img-fluid img-height" alt="/images/logoed2.jpg">
+        </div>
+        </div>
+        </div>
+        <div class="text-center pt-2">
+        <a href="/projectGallery" class="btn btn--rightBorder btn--leftBorder">Load More Projects</a>
+        </div>
+    </div>  
+</div>
+</div>
+</section>
+<footer>
+
+    <%- include('./partials/footer') %>
+</footer>
+<%- include('./partials/scripts') %>
+<script src="/js/vendor/jquery-3.2.1.min.js" type="a1ab2f43e4f0219c697aad9c-text/javascript"></script>
+<script src="/js/vendor/bootstrap.bundle.min.js" type="a1ab2f43e4f0219c697aad9c-text/javascript"></script>
+<script src="/js/vendor/owl.carousel.min.js" type="a1ab2f43e4f0219c697aad9c-text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "name": "iyaalami",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Khosen",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "*",
+        "body-parser": "*",
+        "connect-flash": "*",
+        "cookie-parser": "*",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.8",
+        "express": "*",
+        "express-messages": "*",
+        "express-session": "*",
+        "express-validator": "*",
+        "mongodb": "^4.5.0",
+        "mongoose": "*",
+        "mongoose-slug-updater": "^3.2.3",
+        "morgan": "*",
+        "multer": "^1.4.2",
+        "nodemailer": "^6.7.5",
+        "nodemailer-smtp-transport": "^2.7.4",
+        "nodemon": "^2.0.16",
+        "passport": "*",
+        "passport-http": "*",
+        "passport-local": "*"
+    }
+}

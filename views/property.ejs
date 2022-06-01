@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('./partials/head') %>
+
+</head>
+<body>
+
+<div id="preloader">
+<div class="south-load"></div>
+</div>
+
+<header class="header-area">
+    <%- include('./partials/header') %>
+</header>
+
+
+<section class="breadcumb-area bg-img" style="background-image: url(/images/properties.jpg);">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12">
+<div class="breadcumb-content">
+<h3 class="breadcumb-title">Property Gallery</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="blog-area section-padding-100">
+<div class="container">
+
+    
+
+<div class="row">
+<div class="col-12 col-lg-8">
+<div class="single-blog-area">
+    <% for(var x=0; x<docs.length; x++) {%>
+
+<!--<div class="blog-post-thumbnail">-->
+    <div class="property-thumb">
+      <!--  <a href="/listing/propertyListing/<%=docs[x]._id %>" ><img src="/<%= docs[x].image %>" style="width:500px; height:200px;" alt=""></a>
+      --><a href="/listing/propertyGallery/<%= docs[x]._id %>" ><img src="/<%= docs[x].image %>" style="width:500px; height:200px;" alt=""></a>
+       
+        <div class="tag">
+            <span>  <p> <b>District:</b>
+                
+                <span><%= docs[x]._id %></span>
+                              
+            </p></span>
+        </div>
+        <div class="list-price">
+          
+        </div>
+    </div>
+    <% } %>
+<!--</div>-->
+
+</div>
+
+
+</div>
+<div class="col-12 col-lg-4">
+<div class="blog-sidebar-area">
+
+<!--<div class="search-widget-area mb-70">
+<form action="#" method="get">
+<input type="search" name="search" id="search" placeholder="Search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>-->
+
+<div class="south-catagories-card mb-70">
+<h5>Property Areas</h5>
+<% for(var x=0; x<docs.length; x++) {%>
+
+<ul class="catagories-menu">
+<li><a href="/listing/propertyGallery/<%=docs[x]._id %>"><%= docs[x]._id %></a></li>
+<% } %>
+
+</ul>
+</div>
+ 
+    
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<footer>
+
+    <%- include ('./partials/footer') %>
+</footer>
+<%- include('./partials/scripts') %>
+
+</body>
+</html>

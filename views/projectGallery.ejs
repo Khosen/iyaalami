@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ('./partials/head') %>
+</head>
+<body>
+<header>
+  <%- include('./partials/header') %>
+</header>
+
+<section class="breadcumb-area bg-img" style="background-image: url(/images/project.jpg);">
+  <div class="container h-100">
+  <div class="row h-100 align-items-center">
+  <div class="col-12">
+  <div class="breadcumb-content">
+  <h3 class="breadcumb-title">Projects</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+       
+  <section class="south-blog-area section-padding-100">
+    <div class="container">
+    <div class="row">
+    <% for(var x=0; x<docs.length; x++) {%>
+ 
+    <div class="col-12 col-md-6">
+    <div class="single-post-area mb-50">
+     
+    <div class="post-thumbnail">
+    
+        <img style="height:400px; width:100rem"  src="/<%=docs[x].image%>"/>
+        <p  style="color:rgb(12, 10, 141)!important; font-weight: bold;"><%= docs[x].district%>, &nbsp; 
+            <%= docs[x].state%>, &nbsp; <%= docs[x].city%></p>
+
+    </div>
+    
+  
+    </div>
+    </div>
+      
+   <% } %>
+    </div>
+    <div class="text-center pt-2" >
+        <a href="/" class="btn  activeb" style="background-color: #3d49e9; color:cornsilk;">Home</a>
+      
+        <a href="/projects"  class="btn"style="background-color: #050d7e; color:cornsilk;" >Projects</a>
+      
+    
+    </div>
+      
+    </div>
+</section>
+
+<footer>
+
+  <%- include('./partials/footer') %>
+</footer>
+<%- include('./partials/scripts') %>
+</body>
+</html>

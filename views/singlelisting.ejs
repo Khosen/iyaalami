@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include('./partials/head') %>
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="south-load"></div>
+    </div>
+
+    <header>
+        <%- include('./partials/header') %>
+    </header>
+
+    <section class="breadcumb-area bg-img" style="background-image: url(/images/nowselling9.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content">
+                        <h3 class="breadcumb-title">Property</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="listings-content-wrapper section-padding-100">
+        <div class="container">
+            <% for (x=0; x< list.length; x++) {%>
+            <div class="row">
+                
+                <div class="col-12">
+
+                    <div class="single-listings-sliders owl-carousel">
+
+                        <img src="/<%= list[x].image%>" style="height: 30rem;" alt="">
+
+                        <img src="img/bg-img/hero5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="listings-content">
+
+                        <div class="list-price">
+                            <p>  <%= list[x].price%></p>
+                        </div>
+                        <h5><%= list[x].description%></h5>
+                        <p class="location"><img src="img/icons/location.png" alt=""><%= list[x].address%> <%= list[x].district%></p>
+                        <p><%= list[x].situation%></p>
+
+                   
+                       
+                        <ul class="listings-core-features d-flex align-items-center">
+                            <% for (var j = 0; j < list[x].features.length; j++) {%>
+                            <li style="color:blue!important;"><i class="fa fa-check" aria-hidden="true" ></i> <%= list[x].features[0] %></li>
+                            <% } %>
+                        </ul>
+                        
+                  
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contact-realtor-wrapper">
+                        <div class="realtor-info">
+                            <img src="/images/realtor.jpg" alt="">
+                            <div class="realtor---info">
+                                <h2>Alhaji Kebiru J.</h2>
+                               <!-- <p>Realtor</p>-->
+                                <h6><img src="/img/icons/phone-call.png" alt=""> +234 8188728522</h6>
+                                <h6><img src="/img/icons/envelope.png" alt=""> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fd929b9b949e98bd8998908d919c8998d39e9290">iyaalami@gmail.com</a></h6>
+                            </div>
+                            <div class="realtor--contact-form">
+                                <form action="/contact" method="post">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="realtor-name" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="realtor-number" placeholder="Your Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="enumber" class="form-control" id="realtor-email" placeholder="Your Mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="realtor-message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn south-btn">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          <!--  <div class="row">
+                <div class="col-12">
+                    <div class="listings-maps mt-100">
+                        <div id="googleMap"></div>
+                    </div>
+                </div>
+            </div>-->
+          
+        </div>
+        <% }%> 
+    </section>
+
+
+    <footer>
+
+        <%- include ('./partials/footer') %>
+    </footer>
+    <%- include('./partials/scripts') %>
+</body>
+
+</html>

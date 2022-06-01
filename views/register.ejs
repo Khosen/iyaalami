@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/dashboardhead') %>
+        <!-- Custom styles for this template -->
+        <link href="/css/signin.css" rel="stylesheet">
+        <link href="/css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      -->
+
+</head>
+
+
+
+<body class="text-center">
+    <%- include('./partials/dashboardnav') %>
+
+        <form class="form-signin" method="POST" action="/admin/register">
+            <img class="mb-4" src="/images/logoed2.jpg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+             <span>
+            <% if (locals.errors) { %>
+                <ul>
+                    <% Object.values(errors).forEach(function(error){ %>
+                       
+                        <li class="alert alert-danger" style="list-style:square; font-weight: bold;">
+                            <%= error.msg %>
+                        </li>
+                        <% }); %>
+                </ul>
+                <% } else if(locals.message) { %>
+                <div class="alert alert-success"><%= message.msg %></div>
+
+                <% } %>
+            </span>
+
+
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" data-placement="after" data-toggle="password" maxlength="10" placeholder="Password" required>
+            <label for="password2" class="sr-only">Re-Enter Password</label>
+            <input type="password" id="password2" name="password2" class="form-control" data-toggle="password" maxlength="10" placeholder="Re-Enter Password" required>
+
+            <div>
+                <button class="btn btn-lg btn-primary btn-block button-control" type="submit">Register</button>
+                <p class="mt-5 mb-3 text-muted">Khosen Services &copy; 2020</p>
+
+            </div>
+
+        </form>
+        <!--</div>
+        </main>-->
+        <%- include('./partials/dashboardscript') %>
+</body>
+
+</html>

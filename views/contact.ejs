@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head') %>
+</head>
+<body>
+
+<div id="preloader">
+<div class="south-load"></div>
+</div>
+
+<header class="header-area">
+
+    <%- include('./partials/header') %>
+</header>
+
+
+<section class="breadcumb-area bg-img" style="background-image: url(/images/contact.jpg);">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12">
+<div class="breadcumb-content">
+<h3 class="breadcumb-title" style="background-color: transparent!important; color:blue!important; ">Contact Us</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="south-contact-area section-padding-100">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="contact-heading">
+<h6>Contact info</h6>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-lg-4">
+<div class="content-sidebar">
+   
+<div class="weekly-office-hours">
+<ul>
+<li class="d-flex align-items-center justify-content-between"><span>Monday - Friday</span> <span>08 AM - 5 PM</span></li>
+<!--<li class="d-flex align-items-center justify-content-between"><span>Saturday</span> <span>09 AM - 14 PM</span></li>
+<li class="d-flex align-items-center justify-content-between"><span>Sunday</span> <span>Closed</span></li>-->
+</ul>
+</div>
+
+<div class="address mt-30">
+<h6><img src="img/icons/phone-call.png" alt=""> <p>+234 8188728522</p>
+    <p>+234 8155735639</p> <p>+234 8068753880</p> <p>+234 7067077640</p></h6>
+<h6><img src="img/icons/envelope.png" alt=""> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94fbf2f2fdf7f1d4e0f1f9e4f8f5e0f1baf7fbf9">iyaalami@gmail.com</a></h6>
+<h6><img src="/img/icons/instagram.png" alt=""><a href="https://www.instagram.com/iya_alamiinvestments/" >instagram</a></h6>
+<h6><img src="/img/icons/twitter.png" alt=""><a href="https://twitter.com/IyaLtd">twitter</a></h6>
+
+<h6><img src="img/icons/location.png" alt=""> C17 Efab mall, Area 11, Garki Abuja, Nigeria</h6>
+
+</div>
+</div>
+</div>
+
+<div class="col-12 col-lg-8">
+<div class="contact-form">
+<form action="#" method="post">
+    <span> <% if (locals.message.length>0) { %>
+        <ul>
+          
+                <li class="alert alert-danger" style="list-style:none; font-weight: bold;">
+                    <%= message%>
+                </li>
+           
+        </ul>
+        <% } %>
+<div class="form-group">
+<input type="text" class="form-control" name="name" id="contact-name" placeholder="Your Name">
+</div>
+<div class="form-group">
+<input type="number" class="form-control" name="number" id="contact-number" placeholder="Your Phone">
+</div>
+<div class="form-group">
+<input type="email" class="form-control" name="email" id="contact-email" placeholder="Your Email">
+</div>
+<div class="form-group">
+<textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+</div>
+<button type="submit" class="btn south-btn">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--<div class="map-area mb-100">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div id="googleMap" class="googleMap"></div>
+</div>
+</div>
+</div>
+</div>-->
+
+
+<footer>
+
+    <%- include('./partials/footer') %>
+</footer>
+<%- include('./partials/scripts') %>
+</body>
+
+</html>

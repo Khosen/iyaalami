@@ -1,0 +1,220 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 5rem;
+    
+    /* padding-left: 10rem;*/
+    /*margin-left: 20rem;*/
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+    /* padding-top: 5rem;*/
+    /* margin-top: 10rem;*/
+    /* background-color: gray;*/
+    /*min-height: 75rem;*/
+}
+
+.form-fill {
+    width: 100%;
+    max-width: 650px;
+    padding: 10px;
+    margin: auto;
+}
+
+/*.rSell{
+    font-size:25%!important;
+}*/
+.validate{
+    font-size:85%!important;
+    
+    word-wrap: break-word;
+
+}
+.input-field >select  >option{
+    font-size: 50%!important;
+  
+}
+.materialize-textarea{
+   
+    word-wrap: break-word;
+}
+
+/*.fontsize{
+    font-size:2rem!important;
+   
+}*/
+/*@media (min-width: 380px) {
+    body {
+        padding-top: 18rem;
+        margin-top: 10rem;
+        padding-bottom: 10rem;
+        margin-bottom: 20rem;
+        height: auto;
+        background-color: brown;
+    }
+}*/
+
+@media (max-width:1024px) and (min-width:280px) {
+    body {
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 3rem;
+        margin-top: 5rem;
+        padding-bottom: 13rem;
+        height: auto;
+        overflow: scroll;
+       /* background-color: rgb(226, 89, 89);*/
+        display: inline-flex;
+    }
+    html,
+    body {
+        height: auto;
+    }
+    .form-fill {
+        width: auto;
+        height: auto;
+    }
+    .form-control .custom-select {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+   
+.validate{
+    font-size:85%!important;
+    height:50%;
+    word-wrap: break-word;
+
+}
+.materialize-textarea{
+    font-size:85%!important;
+    height:50%;
+    word-wrap: break-word;
+}
+.input-field{
+    margin-top:0.5rem!important;
+    margin-bottom:0.5rem!important;
+}
+.btn >span{
+    width:30%;
+     font-size: small;
+}
+h5{
+    font-size: 90%!important;
+}
+select.rSell  >option{
+    font-size: 50%!important;
+}
+
+.rSell >label{
+    font-size: 50%!important;
+}
+}
+
+.fontsize {
+    font-size: 1rem!important;
+    color: black!important;
+}
+
+.imageSize {
+    width: 25%;
+    height: 70%;
+    background-color: transparent;
+    border-style: none;
+}
+ 
+
+/*@media (width:1024px) {
+    body {
+        display: -ms-flexbox;
+        display: flex;
+       
+        margin-left: auto;
+        padding-bottom: 5rem;
+        height: auto;
+        overflow: scroll;
+        background-color: rgb(58, 50, 175);
+        display: inline-flex;
+    }
+    html,
+    body {
+        height: auto;
+        width: auto;
+    }
+    .form-fill {
+        width: 100%;
+        height: auto;
+    }
+    .form-control .custom-select {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}*/
+
+
+/*@media (max-width:481px) {
+    body {
+        padding-top: 18rem;
+        margin-top: 10rem;
+        padding-bottom: 25rem;
+        background-color: rgb(97, 30, 206);
+        display: inline-flex;
+    }
+    html,
+    body {
+        height: 50%;
+    }
+    .form-fill {
+        padding: 0px;
+    }
+    }
+
+@media (max-width:641px) {
+    body {
+        padding-top: 18rem;
+        margin-top: 10rem;
+        padding-bottom: 25rem;
+        background-color: rgb(83, 207, 72);
+        display: inline-flex;
+    }
+    html,
+    body {
+        height: 50%;
+    }
+    .form-fill {
+        padding: 0px;
+    }
+   }
+
+@media (max-width:961px) {
+    body {
+        padding-top: 18rem;
+        margin-top: 10rem;
+        padding-bottom: 25rem;
+        background-color: rgb(231, 54, 163);
+        display: inline-flex;
+    }
+    html,
+    body {
+        height: 50%;
+    }
+    .form-fill {
+        padding: 0px;
+    }
+   
+}
+
+@media (min-width:1025px) {
+   
+}
+
+@media (min-width:1281px) {
+    
+}*/
